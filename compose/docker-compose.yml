@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  # api:
+  #   build: .
+  #   ports:
+  #     - "1111:3000"
+  #   restart: "unless-stopped"
+
+  database:
+    container_name: mydatabase
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    restart: "unless-stopped"
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345aA@
+      MYSQL_DATABASE: node
+      

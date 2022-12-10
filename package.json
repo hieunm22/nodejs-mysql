@@ -1,0 +1,26 @@
+{
+  "name": "todo-nodejs",
+  "version": "1.0.0",
+  "description": "todo api by nodejs",
+  "main": "index.ts",
+  "author": "Minh Hieu",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.0",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "typescript": "^4.9.3"
+  },
+  "scripts": {
+    "start": "nodemon src/server.ts",
+    "test": "echo \"start to run test\"",
+    "format": "prettier --write src/**/*.ts"
+  }
+}
