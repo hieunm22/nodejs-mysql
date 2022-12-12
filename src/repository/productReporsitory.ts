@@ -1,5 +1,9 @@
 module.exports = {
-	getAllProducts: (err: any, response: any) => {
-		console.log("response getAllProducts repo:>> ", response)
+	getAllProducts: (res: any) => (err: any, response: any) => {
+		return res.send(response)
+	},
+	getDetail: (res: any) => (err: any, response: any) => {
+		const send = response && response.length > 0 ? response[0] : {}
+		return res.send(send)
 	}
 }
